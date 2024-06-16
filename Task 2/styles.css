@@ -1,0 +1,115 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #a8ebfd;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Header styles */
+header {
+    background-color: #0f0080;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    animation: fadeInDown 1s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth header color transition */
+}
+
+header:hover {
+    background-color: #fe0094; /* Darker shade on hover */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth heading border color transition */
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    animation: zoomIn 1s ease-in-out;
+    transition: transform 0.3s ease; /* Smooth image scale transition */
+}
+
+section img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+/* List styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Blockquote styles */
+blockquote {
+    font-style: italic;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #4a90e2;
+    animation: fadeIn 1.5s ease-in-out;
+    transition: border-left-color 0.3s ease; /* Smooth blockquote border color transition */
+}
+
+/* Footer styles */
+footer {
+    background-color: #008cdd;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    animation: fadeInUp 1s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth footer color transition */
+    position: fixed;
+    bottom: 0;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
+}
